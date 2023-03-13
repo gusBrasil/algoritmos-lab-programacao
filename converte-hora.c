@@ -1,3 +1,6 @@
+// Programa feito por Gustavo Medeiros Brasil para a matéria Algoritmos e Laboratório de Programação.
+// A função desse algoritmo é converter os horários do formato 24 horas ao formato 12 horas e vice-versa a partir de um input do usuário.
+
 #include <stdio.h>
 #include <string.h>
 
