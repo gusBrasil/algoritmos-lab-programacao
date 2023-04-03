@@ -56,7 +56,8 @@ int main() {
     }
 
     int opcao;
-    printf("Digite 1 para ordenar em ordem crescente ou 2 para ordenar em ordem decrescente: ");
+    //printf("Digite 1 para ordenar em ordem crescente ou 2 para ordenar em ordem decrescente: ");
+    printf("Deseja ordenar em ordem crescente ou decrescente? (1/2): ");
     scanf("%d", &opcao);
 
     if (opcao == 1) {
