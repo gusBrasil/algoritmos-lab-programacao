@@ -1,0 +1,18 @@
+Nome: Agumon
+Nivel: Crianca
+Atributo: Vacina
+Forma anterior: Koromon
+Forma posterior: NNN
+
+Nome: Devimon
+Nivel: NNN
+Atributo: NNN
+Forma anterior: NNN
+Forma posterior: NNN
+
+Nome: Gabumon
+Nivel: NNN
+Atributo: NNN
+Forma anterior: NNN
+Forma posterior: NNN
+
