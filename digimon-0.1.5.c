@@ -1,18 +1,19 @@
 // Programa feito por Gustavo Medeiros Brasil para a matéria Algoritmos e Laboratório de Programação.
 // A função desse algoritmo é gerar uma struct de Digimons, salvando os dados de cada digimon de acordo com o input do usuário.
 // Atualizado: Agora os digimons são exibidos em uma lista, e o usuário pode escolher entre ordenar na ordem alfabética crescente ou decrescente.
+// O programa salva num arquivo binário, que deve ser lido com o algoritmo correto.
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 struct Digievolucoes {
-    char pre[30];
-    char pos[30];
+    char pre[40];
+    char pos[40];
 };
 
 struct Digimon {
-    char nome[30];
+    char nome[40];
     char nivel[20];
     char atributo[20];
     struct Digievolucoes digievolucoes;
@@ -68,6 +69,23 @@ int main() {
         printf("Opcao invalida!\n");
         return 1;
     }
+
+        // abrir arquivo binário para escrita
+    FILE *arquivo = fopen("digimons.bin", "wb");
+
+    // verificar se o arquivo foi aberto corretamente
+    if (arquivo == NULL) {
+        printf("Erro ao criar o arquivo binario.\n");
+        return 1;
+    }
+
+    // escrever a lista de digimons no arquivo binário
+    fwrite(digimons, sizeof(struct Digimon), 3, arquivo);
+
+    // fechar o arquivo binário
+    fclose(arquivo);
+
+    printf("Arquivo binario criado com sucesso.\n");
 
     printf("Lista de Digimons:\n");
 
