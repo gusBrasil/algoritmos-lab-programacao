@@ -182,6 +182,6 @@ int buscaBinaria(Pokemon p[], int n, char nome[]) {
 
         printf("\nPokemons salvos no arquivo pokemons.bin\n");
 
+        system("pause");
         return 0;
     }
-

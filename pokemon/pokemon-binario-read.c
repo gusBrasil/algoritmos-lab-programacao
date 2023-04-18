@@ -34,6 +34,7 @@ int main() {
 
     fclose(arquivo);
 
+    system("pause");
     return 0;
 }
 
